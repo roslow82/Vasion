@@ -108,6 +108,9 @@ namespace PrinterLogicsTests
             }
         }
 
+        /// <summary>
+        /// Test the incorrect login information
+        /// </summary>
         [Test]
         public void LoginIncorrect()
         {
@@ -139,6 +142,9 @@ namespace PrinterLogicsTests
                 Assert.Fail(launchingService.ToLower());
         }
         
+        /// <summary>
+        /// Test login with no username
+        /// </summary>
         [Test]
         public void LoginNoUser()
         {
@@ -170,7 +176,7 @@ namespace PrinterLogicsTests
         }
 
         /// <summary>
-        /// Test login with no Password
+        /// Test login with no password
         /// </summary>
         [Test]
         public void LoginNoPassword()
