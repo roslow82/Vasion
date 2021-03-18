@@ -29,16 +29,16 @@ namespace PrinterLogicsTests
         // Declare driver
         private IWebDriver driver;
        
-        // Declare text to use in tests
-        static string url = @"https://russc.printercloud.com/admin/";   // URL used for testing
-        static string privacyPolicyUrl = @"https://www.printerlogic.com/privacy-policy/";
-        static string passwordResetUrl = @"https://russc.printercloud.com/admin/password/reset/";
+        // Declare text to use in tests        
+        static string url = @"https://russc.printercloud.com/admin/";                               // Login URL
+        static string privacyPolicyUrl = @"https://www.printerlogic.com/privacy-policy/";           // Privacy Policy URL
+        static string passwordResetUrl = @"https://russc.printercloud.com/admin/password/reset/";   // Password Reset URL
 
-        static string usernameId = "relogin_user";          // Expected ID of username field on the page
-        static string passwordId = "relogin_password";      // Expected ID of password field on the page
-        static string loginButtonId = "admin-login-btn";    // Expected ID of login button on the page
-        static string loginTextID = "logintext";            // Expected ID of login text placeholder on the page
-        static string passwordResetFormID = "forgot-password-form";
+        static string usernameId = "relogin_user";                  // Expected ID of username field on the page
+        static string passwordId = "relogin_password";              // Expected ID of password field on the page
+        static string loginButtonId = "admin-login-btn";            // Expected ID of login button on the page
+        static string loginTextID = "logintext";                    // Expected ID of login text placeholder on the page
+        static string passwordResetFormID = "forgot-password-form"; // Expected ID of password reset form
 
         static string noUserOrPassword = "Please Enter your Username and Password:";        // Expected text when no user or password is entered
         static string invalidUserOrPassword = "Invalid username or password.";              // Expected text when incorrect user or password is entered
@@ -47,9 +47,9 @@ namespace PrinterLogicsTests
         static string passwordResetLinkText = "Lost Password";  // Expected text for password reset link
         static string privacyPolicyLinkText = "Privacy Policy"; // Expected text for privacy policy link
 
-        static string correctUsername = "RussClegg";    // Correct username
-        static string correctPassword = "MyPassword1";  // Correct password
-        static string passwordResetEmail = "russelljclegg@gmail.com";
+        static string correctUsername = "RussClegg";                    // Correct username
+        static string correctPassword = "MyPassword1";                  // Correct password
+        static string passwordResetEmail = "russelljclegg@gmail.com";   // password reset email to use
 
         // Declare helper variables
         WebDriverWait waitForElement;
